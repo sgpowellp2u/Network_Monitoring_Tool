@@ -153,7 +153,7 @@ class NetworkMonitor:
         table.add_column("Average Latency")
         table.add_column("Latency Change")
         table.add_column("Success Rate")
-        table.add_column("Test Count")
+        table.add_column("Count")
         table.add_column("Last Update")
         table.add_column("Jitter")
 
@@ -168,7 +168,10 @@ class NetworkMonitor:
                 result.latency_change or "-",
                 f"{result.success_rate:.2f} %" if result.history else "0.00 %",
                 str(result.test_count),
-                result.last_update.strftime('%Y-%m-%d %H:%M:%S'),
+                #The following line includes date as well as time; uncomment if needed
+                #result.last_update.strftime('%Y-%m-%d %H:%M:%S'),
+                #The following line includes only time
+                result.last_update.strftime('%H:%M:%S'),
                 f"{result.jitter:.2f} ms" if result.jitter else "0.00 ms"
             )
 
