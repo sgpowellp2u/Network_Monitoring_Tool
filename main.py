@@ -1,15 +1,15 @@
 import time
 import socket
 import threading
-from ping3 import ping
-from rich.table import Table
-from rich.console import Console
-from rich.live import Live
 from datetime import datetime
 import ipaddress
 from collections import deque
 from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, Optional, List
+from rich.table import Table
+from rich.console import Console
+from rich.live import Live
+from ping3 import ping
 
 class HostResult:
     """Stores the monitoring results for a single host."""

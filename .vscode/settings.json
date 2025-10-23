@@ -1,0 +1,16 @@
+{
+    // Use the project's virtual environment
+    "python.pythonPath": ".venv\\Scripts\\python.exe",
+    // Enable linting
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    // Disable false positives for standard library modules
+    "python.linting.pylintArgs": [
+        "--init-hook",
+        "import sys; sys.path.append('.')",
+        "--disable=E0611"
+    ],
+    // Optional: formatting with Black
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
+}
