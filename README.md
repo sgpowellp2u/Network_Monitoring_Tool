@@ -4,6 +4,7 @@
 ![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)
 
 The **Ping Monitoring Tool** is a robust Python-based script designed to continuously monitor the latency and availability of multiple hosts. It offers real-time insights into various performance metrics, including average latency, success rate, and jitter, presented through a dynamic console interface.
+It has had colour coding for status and the ability to manually add hostnames added 23/10/25
 
 ## Table of Contents
 
